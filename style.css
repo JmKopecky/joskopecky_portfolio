@@ -7,8 +7,72 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: scss-theme-dev
 */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap");
 p {
+  font: 1em "JetBrains Mono", monospace;
+  color: #d3d4d8;
   margin: 0 0 0 0;
+}
+a {
+  font: italic 1em "JetBrains Mono", monospace;
+  color: #aaacb4;
+  margin: 0 0 0 0;
+}
+a:hover {
+  color: #8f929c;
+}
+a:active {
+  color: white;
+}
+h1 {
+  font: bold 3.3em "Exo 2", sans-serif;
+  color: white;
+}
+h2 {
+  font: bold 3em "Exo 2", sans-serif;
+  color: white;
+}
+h3 {
+  font: 2.9em "Exo 2", sans-serif;
+  color: #fcfcfc;
+}
+h4 {
+  font: 2.6em "Exo 2", sans-serif;
+  color: #fcfcfc;
+}
+h5 {
+  font: 2.3em "Exo 2", sans-serif;
+  color: #fcfcfc;
+}
+h6 {
+  font: 2em "Exo 2", sans-serif;
+  color: #fcfcfc;
+}
+button {
+  background-color: #ff4900;
+}
+button a {
+  font: bold italic 1em "JetBrains Mono", monospace;
+  color: #d3d4d8;
+}
+button a:hover {
+  color: #aaacb4;
+}
+button a:active {
+  color: #8f929c;
+}
+button p {
+  font: bold 1em "JetBrains Mono", monospace;
+}
+button:hover {
+  background-color: #b33300;
+}
+button:active {
+  background-color: #802500;
+}
+::selection {
+  background-color: #e64200;
 }
 body {
   background-color: #00003E;

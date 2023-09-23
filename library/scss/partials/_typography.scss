@@ -1,3 +1,121 @@
+
+//font-family: 'JetBrains Mono', monospace;
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&display=swap');
+
+//font-family: 'Exo 2', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+
+$paragraph-font-family: 'JetBrains Mono', monospace;
+$heading-font-family: 'Exo 2', sans-serif;
+
+//body content fonts
+$paragraph-font: 1em $paragraph-font-family;
+$paragraph-italic: italic 1em $paragraph-font-family;
+$paragraph-bold: bold 1em $paragraph-font-family;
+$paragraph-bold-italic: bold italic 1em $paragraph-font-family;
+
+//h1 fonts
+$heading1-font: 3.5em $heading-font-family;
+$heading1-bold: bold 3.3em $heading-font-family;
+$heading1-italic: italic 3.5em $heading-font-family;
+$heading1-bold-italic: bold italic 3.3em $heading-font-family;
+//h2 fonts
+$heading2-font: 3.2em $heading-font-family;
+$heading2-bold: bold 3em $heading-font-family;
+$heading2-italic: italic 3.2em $heading-font-family;
+$heading2-bold-italic: bold italic 3em $heading-font-family;
+//h3 fonts
+$heading3-font: 2.9em $heading-font-family;
+$heading3-bold: bold 2.7em $heading-font-family;
+$heading3-italic: italic 2.9em $heading-font-family;
+$heading3-bold-italic: bold italic 2.7em $heading-font-family;
+//h4 fonts
+$heading4-font: 2.6em $heading-font-family;
+$heading4-bold: bold 2.4em $heading-font-family;
+$heading4-italic: italic 2.6em $heading-font-family;
+$heading4-bold-italic: bold italic 2.4em $heading-font-family;
+//h5 fonts
+$heading5-font: 2.3em $heading-font-family;
+$heading5-bold: bold 2.1em $heading-font-family;
+$heading5-italic: italic 2.3em $heading-font-family;
+$heading5-bold-italic: bold italic 2.1em $heading-font-family;
+//h6 fonts
+$heading6-font: 2em $heading-font-family;
+$heading6-bold: bold 1.8em $heading-font-family;
+$heading6-italic: italic 2em $heading-font-family;
+$heading6-bold-italic: bold italic 1.8em $heading-font-family;
+
+
+//body text styling
 p {
+    font: $paragraph-font;
+    color: $text-color;
     margin: 0 0 0 0;
+}
+//links
+a {
+    font: $paragraph-italic;
+    color: $text-dark;
+    margin: 0 0 0 0;
+}
+a:hover {
+    color: $text-darker;
+}
+a:active {
+    color: $text-lighter;
+}
+//headers
+h1 {
+    font: $heading1-bold;
+    color: $text-lighter;
+}
+h2 {
+    font: $heading2-bold;
+    color: $text-lighter;
+}
+h3 {
+    font: $heading3-font;
+    color: $text-light;
+}
+h4 {
+    font: $heading4-font;
+    color: $text-light;
+}
+h5 {
+    font: $heading5-font;
+    color: $text-light;
+}
+h6 {
+    font: $heading6-font;
+    color: $text-light;
+}
+
+//button styling
+button {
+    background-color: $accent-color;
+    a {
+        font: $paragraph-bold-italic;
+        color: $text-color;
+    }
+    a:hover {
+        color: $text-dark;
+    }
+    a:active {
+        color: $text-darker;
+    }
+
+    p {
+        font: $paragraph-bold;
+    }
+}
+button:hover {
+    background-color: $accent-dark;
+}
+button:active {
+    background-color: $accent-darker;
+}
+
+//change the color of the background when the user highlights/selects something.
+::selection {
+    background-color: darken($accent-color, 5%);
 }
