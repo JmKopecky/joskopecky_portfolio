@@ -1,3 +1,0 @@
-Design the default theme
-Design a fake product
-Design a website for the fake product.
