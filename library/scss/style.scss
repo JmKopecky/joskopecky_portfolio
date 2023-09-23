@@ -1,18 +1,19 @@
 /*
-Theme Name: Prognitio Core
-Theme URI: https://prognitio.dev
+Theme Name: SCSS Theme Development Template
 Author: Joseph Kopecky
-Author URI: https://prognitio.dev
-Description: The core Prognitio theme
+Description: A theme template designed for developers to quickly build their Wordpress themes utilizing SCSS/SASS.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: prognitio-theme
+Text Domain: scss-theme-dev
 */
 
-/* import variables */
+// import variables
 @import 'partials/_variables.scss';
-/* import colors */
+// import colors
 @import 'partials/_colors.scss';
-/* import typography */ 
+// import typography
 @import 'partials/_typography.scss';
+
+// import mobile stylesheet
+@import 'breakpoints/_mobile.scss';

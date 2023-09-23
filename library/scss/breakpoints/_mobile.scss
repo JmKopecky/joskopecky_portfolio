@@ -1,0 +1,21 @@
+//base css file
+
+
+body { 
+    background-color:#00003E; //site background
+    margin:0 0 0 0;
+}
+
+//header css
+@import "../partials/components/_header.scss";
+
+//footer css
+@import "../partials//components/_footer.scss";
+
+#container {
+    width:100%;
+    min-height:100vh; //ensures the website at the least fills up the entire screen.
+}
+
+
+
