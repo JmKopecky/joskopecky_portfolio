@@ -10,12 +10,12 @@ body {
 @import "../partials/components/_header.scss";
 
 //footer css
-@import "../partials//components/_footer.scss";
+@import "../partials/components/_footer.scss";
 
 #container {
     width:100%;
     min-height:100vh; //ensures the website at the least fills up the entire screen.
 }
 
-
-
+//404 page
+@import "../partials/components/_404.scss";
