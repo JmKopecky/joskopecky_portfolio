@@ -92,7 +92,13 @@ h6 {
 
 //button styling
 button {
+    width:8em;
+    height:4em;
+    border-radius:1em;
+    border-color:transparent;
+    padding:0;
     background-color: $accent-color;
+    transition: scale 0.5s, translate 0.5s, background-color 0.5s, color 0.5s;
     a {
         font: $paragraph-bold-italic;
         color: $text-color;
@@ -105,13 +111,19 @@ button {
     }
 
     p {
+        margin-top:0;
         font: $paragraph-bold;
+        font-size:2em;
     }
 }
 button:hover {
+    scale: 110%;
+    translate: 5%;
     background-color: $accent-dark;
 }
 button:active {
+    scale: 120%;
+    translate:10%;
     background-color: $accent-darker;
 }
 

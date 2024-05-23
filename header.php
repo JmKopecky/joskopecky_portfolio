@@ -10,16 +10,19 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	-->
 	<link rel="stylesheet" href="/wp-content/themes/Revelio/style.css">
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="wp-content/themes/Revelio/library/javascript/preloader.js"> </script>
 	<title><?php bloginfo('title') ?></title>
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
+<?php require("sections/preloader.php")?>
+
 <div id="header"> 
 	<div id="header-name-container"> 
-		<p class="header-name"> Prognitio </p>
+		<p class="header-name"> Lorem Ipsum </p>
 	</div>
 </div>
 
