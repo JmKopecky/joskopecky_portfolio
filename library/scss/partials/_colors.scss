@@ -1,26 +1,33 @@
 //colors
 //you can set the 4 colors here and use the darker or lighter variables when necessary
-$primary-color: #010081;
-$secondary-color: #d3d4d8;
-$accent-color: #ff4900;
-$text-color: #d3d4d8;
+$background_main: #170312;
+$background_secondary: #33032f;
+$accent: #60f737;
+$text_main: #acbdbc;
+$text_secondary: #3ebfc8;
 
-$primary-dark: darken($primary-color, 15%);
-$primary-darker: darken($primary-color, 25%);
-$primary-light: lighten($primary-color, 15%);
-$primary-lighter: lighten($primary-color, 25%);
 
-$secondary-dark: darken($secondary-color, 15%);
-$secondary-darker: darken($secondary-color, 25%);
-$secondary-light: lighten($secondary-color, 15%);
-$secondary-lighter: lighten($secondary-color, 25%);
+$background_dark: darken($background_main, 15%);
+$background_darker: darken($background_main, 25%);
+$background_light: lighten($background_main, 15%);
+$background_lighter: lighten($background_main, 25%);
 
-$accent-dark: darken($accent-color, 15%);
-$accent-darker: darken($accent-color, 25%);
-$accent-light: lighten($accent-color, 15%);
-$accent-lighter: lighten($accent-color, 25%);
+$background_secondary_dark: darken($background_secondary, 15%);
+$background_secondary_darker: darken($background_secondary, 25%);
+$background_secondary_light: lighten($background_secondary, 15%);
+$background_secondary_lighter: lighten($background_secondary, 25%);
 
-$text-dark: darken($text-color, 15%);
-$text-darker: darken($text-color, 25%);
-$text-light: lighten($text-color, 15%);
-$text-lighter: lighten($text-color, 25%);
+$accent_dark: darken($accent, 15%);
+$accent_darker: darken($accent, 25%);
+$accent_light: lighten($accent, 15%);
+$accent_lighter: lighten($accent, 25%);
+
+$text_dark: darken($text_main, 15%);
+$text_darker: darken($text_main, 25%);
+$text_light: lighten($text_main, 15%);
+$text_lighter: lighten($text_main, 25%);
+
+$text_secondary_dark: darken($text_secondary, 15%);
+$text_secondary_darker: darken($text_secondary, 25%);
+$text_secondary_light: lighten($text_secondary, 15%);
+$text_secondary_lighter: lighten($text_secondary, 25%);

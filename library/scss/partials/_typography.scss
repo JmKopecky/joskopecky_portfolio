@@ -1,12 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-//font-family: 'JetBrains Mono', monospace;
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&display=swap');
-
-//font-family: 'Exo 2', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
-
-$paragraph-font-family: 'JetBrains Mono', monospace;
-$heading-font-family: 'Exo 2', sans-serif;
+$paragraph-font-family: 'Source Code Pro', monospace;
+$heading-font-family: 'Audiowide', monospace;
 
 //body content fonts
 $paragraph-font: 1em $paragraph-font-family;
@@ -49,45 +44,45 @@ $heading6-bold-italic: bold italic 1.8em $heading-font-family;
 //body text styling
 p {
     font: $paragraph-font;
-    color: $text-color;
+    color: $text_main;
     margin: 0 0 0 0;
 }
 //links
 a {
     font: $paragraph-italic;
-    color: $text-dark;
+    color: $text_secondary;
     margin: 0 0 0 0;
 }
 a:hover {
-    color: $text-darker;
+    color: $text_secondary_darker;
 }
 a:active {
-    color: $text-lighter;
+    color: $text_secondary_lighter;
 }
 //headers
 h1 {
     font: $heading1-bold;
-    color: $text-lighter;
+    color: $accent;
 }
 h2 {
     font: $heading2-bold;
-    color: $text-lighter;
+    color: $text_secondary_lighter;
 }
 h3 {
     font: $heading3-font;
-    color: $text-light;
+    color: $text_secondary_light;
 }
 h4 {
     font: $heading4-font;
-    color: $text-light;
+    color: $text_secondary;
 }
 h5 {
     font: $heading5-font;
-    color: $text-light;
+    color: $text_lighter;
 }
 h6 {
     font: $heading6-font;
-    color: $text-light;
+    color: $text_light;
 }
 
 //button styling
@@ -97,37 +92,38 @@ button {
     border-radius:1em;
     border-color:transparent;
     padding:0;
-    background-color: $accent-color;
+    background-color: $accent;
     transition: scale 0.5s, translate 0.5s, background-color 0.5s, color 0.5s;
     a {
         font: $paragraph-bold-italic;
-        color: $text-color;
+        color: $background_secondary;
     }
     a:hover {
-        color: $text-dark;
+        color: $background_secondary_dark;
     }
     a:active {
-        color: $text-darker;
+        color: $background_secondary_darker;
     }
 
     p {
         margin-top:0;
         font: $paragraph-bold;
         font-size:2em;
+        color: $background_secondary;
     }
 }
 button:hover {
     scale: 110%;
     translate: 5%;
-    background-color: $accent-dark;
+    background-color: $accent_dark;
 }
 button:active {
     scale: 120%;
     translate:10%;
-    background-color: $accent-darker;
+    background-color: $accent_darker;
 }
 
 //change the color of the background when the user highlights/selects something.
 ::selection {
-    background-color: darken($accent-color, 5%);
+    background-color: darken($accent, 50%);
 }
