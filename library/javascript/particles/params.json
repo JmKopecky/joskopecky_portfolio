@@ -1,0 +1,57 @@
+{
+  "particles": {
+    "density": 200,
+    "color": "#2eae0a",
+    "size": {
+      "value": 1,
+      "random": false
+    },
+    "movement": {
+      "speed": 1,
+      "restless": {
+        "enabled": true,
+        "value": 10
+      }
+    },
+    "interactivity": {
+      "on_hover": {
+        "enabled": true,
+        "action": "repulse"
+      },
+      "on_click": {
+        "enabled": true,
+        "action": "grab"
+      },
+      "on_touch": {
+        "enabled": true,
+        "action": "repulse"
+      }
+    }
+  },
+  "image": {
+    "src": {
+      "path": "wp-content/themes/revelio/library/images/portfolio-logo-inkscape.png",
+      "is_external": false
+    },
+    "size": {
+      "canvas_pct": 60,
+      "min_px": 150,
+      "max_px": 800
+    }
+  },
+  "interactions": {
+    "repulse": {
+      "distance": 100,
+      "strength": 200
+    },
+    "big_repulse": {
+      "distance": 100,
+      "strength": 500
+    },
+    "grab": {
+      "distance": 100,
+      "line_width": 1
+    }
+  },
+  "disabled": false
+}

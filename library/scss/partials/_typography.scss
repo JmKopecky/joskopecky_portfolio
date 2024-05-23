@@ -63,26 +63,32 @@ a:active {
 h1 {
     font: $heading1-bold;
     color: $accent;
+    margin: 0 0 0 0;
 }
 h2 {
     font: $heading2-bold;
     color: $text_secondary_lighter;
+    margin: 0 0 0 0;
 }
 h3 {
     font: $heading3-font;
     color: $text_secondary_light;
+    margin: 0 0 0 0;
 }
 h4 {
     font: $heading4-font;
     color: $text_secondary;
+    margin: 0 0 0 0;
 }
 h5 {
     font: $heading5-font;
     color: $text_lighter;
+    margin: 0 0 0 0;
 }
 h6 {
     font: $heading6-font;
     color: $text_light;
+    margin: 0 0 0 0;
 }
 
 //button styling

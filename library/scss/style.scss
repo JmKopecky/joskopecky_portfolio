@@ -15,5 +15,5 @@ Text Domain: scss-theme-dev
 // import typography
 @import 'partials/_typography.scss';
 
-// import mobile stylesheet
-@import 'breakpoints/_mobile.scss';
+// import primary stylesheet
+@import 'breakpoints/desktop';

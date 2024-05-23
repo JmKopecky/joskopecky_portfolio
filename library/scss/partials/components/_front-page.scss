@@ -1,0 +1,49 @@
+.front-page-container {
+
+
+  .hero-section-container {
+    width:100%;
+    height:100vh;
+    position:relative;
+
+    #particle-image {
+      background-color: $background_main;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: auto;
+      z-index: 1;
+    }
+
+    #hero-spacer {
+      height: 40vh;
+      width:0;
+      position:relative;
+      z-index: 2;
+    }
+
+    .hero-name-pretext {
+      margin-left: 2vw;
+      width: fit-content;
+      z-index: 2;
+      position:relative;
+    }
+
+    .hero-header-name {
+      margin-left: 2vw;
+      width: fit-content;
+      z-index: 2;
+      position:relative;
+    }
+
+    .hero-tagline {
+      color: $text_secondary;
+      margin-left: 2vw;
+      width: fit-content;
+      z-index: 2;
+      position:relative;
+    }
+  }
+}
