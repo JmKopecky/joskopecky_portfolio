@@ -7,10 +7,10 @@
       "random": false
     },
     "movement": {
-      "speed": 1,
+      "speed": 5,
       "restless": {
         "enabled": true,
-        "value": 10
+        "value": 1000
       }
     },
     "interactivity": {

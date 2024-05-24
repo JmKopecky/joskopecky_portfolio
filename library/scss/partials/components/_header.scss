@@ -8,6 +8,10 @@
     #header-name-container {
         width:fit-content;
         margin:auto;
+        visibility: hidden;
+        translate: 0 -100%;
+        transition: translate 1s;
+
         p.header-name {
             font-size:2vh;
             margin-top:1.5vh;
