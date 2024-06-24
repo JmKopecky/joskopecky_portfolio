@@ -3,7 +3,7 @@ $background_main: #12020E;
 $background_secondary: #220220;
 $accent: #2EAE0A;
 $text_main: #acbdbc;
-$text_secondary: #28888F;
+$text_secondary: lighten(#28888F, 10%);
 
 
 
@@ -12,6 +12,7 @@ body {
   background-color:$background_main; //site background
   margin:0 0 0 0;
   min-height:100vh;
+  position: relative;
 }
 
 
@@ -55,9 +56,21 @@ a {
   font: $paragraph-italic;
   color: $text_secondary;
   margin: 0 0 0 0;
+  text-decoration: none;
 }
-a:hover {
-  color: darken($text_secondary, 8%);
+a::after {
+  content:'';
+  position:absolute;
+  background-color: $text_secondary;
+  width:0%;
+  height: 3px;
+  bottom:0;
+  left:0;
+
+  transition: width 0.5s;
+}
+a:hover::after {
+  width:100%;
 }
 a:active {
   color: lighten($text_secondary, 8%);

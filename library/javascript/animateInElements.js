@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-    $("#header-name-container").css({"visibility": "visible", "translate": "0"})
+
+    $("#header").css({"visibility": "visible", "translate": "0"})
 
     $("#hero-name-pretext").css({"visibility": "visible", "translate": "0"})
     $("#hero-header-name").css({"visibility": "visible", "translate": "0"})

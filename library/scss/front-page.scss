@@ -128,4 +128,78 @@
       }
     }
   }
+
+
+  #notable-accomplishments-section {
+    width: 100%;
+    height: fit-content;
+    position:relative;
+    background-color: $background_secondary;
+    overflow: hidden;
+
+    h3 {
+      width: fit-content;
+      margin: 2vh auto 2vh auto;
+    }
+
+
+    ul {
+      margin: 5vh 0 5vh 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: fit-content;
+      transform: translateY(50%);
+      white-space: nowrap;
+      animation: loop 45s linear infinite alternate;
+
+      @keyframes loop {
+        0% {transform: translateX(0%);}
+        100% {transform: translateX(-80%);}
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 0 0.2rem;
+        white-space: nowrap;
+
+        p {
+          font-size: 1.6em;
+          padding-left: 0.8em;
+          padding-right: 0.8em;
+        }
+      }
+    }
+  }
+
+
+  #notable-accomplishments-section::before {
+    content:'';
+    position:absolute;
+    background-color: $accent;
+    width:0%;
+    height: 3px;
+    top:0;
+    left:0;
+
+    animation: borderanim 2s 2s infinite alternate-reverse linear;
+  }
+  #notable-accomplishments-section::after {
+    content:'';
+    position:absolute;
+    background-color: $accent;
+    width:0%;
+    height: 3px;
+    bottom:0;
+    left:0;
+
+    animation: borderanim 2s infinite alternate-reverse linear;
+  }
+
+  @keyframes borderanim {
+    0% {width: 0%; left:0;}
+    50% {width: 50%;}
+    100% {width: 0%; left:100%;}
+  }
 }
