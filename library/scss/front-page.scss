@@ -177,29 +177,83 @@
   #notable-accomplishments-section::before {
     content:'';
     position:absolute;
-    background-color: $accent;
+    background-color: darken($accent, 10%);;
     width:0%;
     height: 3px;
     top:0;
     left:0;
 
-    animation: borderanim 2s 2s infinite alternate-reverse linear;
+    animation: borderanim 5s 5s infinite alternate-reverse linear;
   }
   #notable-accomplishments-section::after {
     content:'';
     position:absolute;
-    background-color: $accent;
+    background-color: darken($accent, 10%);
     width:0%;
     height: 3px;
     bottom:0;
     left:0;
 
-    animation: borderanim 2s infinite alternate-reverse linear;
+    animation: borderanim 5s infinite alternate-reverse linear;
   }
 
   @keyframes borderanim {
     0% {width: 0%; left:0;}
     50% {width: 50%;}
     100% {width: 0%; left:100%;}
+  }
+
+  #project-transition {
+    background-color: $background-secondary;
+    width: 100%;
+    height: 20vh;
+    padding-top: 20vh;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+  #project-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $background_main;
+
+    h2 {
+      width: fit-content;
+      margin: auto;
+      padding-top: 2vh;
+      padding-bottom: 10vh;
+    }
+
+
+    .project-tile {
+      width: 50%;
+      height: fit-content;
+      text-align: center;
+
+      .project-skills-title {
+        margin-top: 1em;
+        font-weight: bold;
+        color: lighten($text_main, 5%);
+      }
+      .project-desc {
+        text-align: left;
+        padding-left: 0.5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        width: 80%;
+      }
+      .project-skills-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .project-link {
+        padding-top: 1em;
+      }
+    }
   }
 }
