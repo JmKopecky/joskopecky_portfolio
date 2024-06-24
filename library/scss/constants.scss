@@ -1,0 +1,130 @@
+//colors
+$background_main: #12020E;
+$background_secondary: #220220;
+$accent: #2EAE0A;
+$text_main: #acbdbc;
+$text_secondary: #28888F;
+
+
+
+//other
+body {
+  background-color:$background_main; //site background
+  margin:0 0 0 0;
+  min-height:100vh;
+}
+
+
+//typography
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+$paragraph-font-family: 'Source Code Pro', monospace;
+$heading-font-family: 'Audiowide', monospace;
+
+
+//body content fonts
+$paragraph-font: 1em $paragraph-font-family;
+$paragraph-italic: italic 1em $paragraph-font-family;
+$paragraph-bold: bold 1em $paragraph-font-family;
+$paragraph-bold-italic: bold italic 1em $paragraph-font-family;
+
+//h1 fonts
+$heading1-font: bold 3.5em $heading-font-family;
+
+//h2 fonts
+$heading2-font: bold 3em $heading-font-family;
+
+//h3 fonts
+$heading3-font: 2.5em $heading-font-family;
+
+//h4 fonts
+$heading4-font: 2em $heading-font-family;
+
+
+
+//body text styling
+p {
+  font: $paragraph-font;
+  color: $text_main;
+  margin: 0 0 0 0;
+}
+
+
+//links
+a {
+  font: $paragraph-italic;
+  color: $text_secondary;
+  margin: 0 0 0 0;
+}
+a:hover {
+  color: darken($text_secondary, 8%);
+}
+a:active {
+  color: lighten($text_secondary, 8%);
+}
+
+
+//headers
+h1 {
+  font: $heading1-font;
+  color: $accent;
+  margin: 0 0 0 0;
+}
+h2 {
+  font: $heading2-font;
+  color: lighten($text_secondary, 8%);
+  margin: 0 0 0 0;
+}
+h3 {
+  font: $heading3-font;
+  color: lighten($text_secondary, 3%);
+  margin: 0 0 0 0;
+}
+h4 {
+  font: $heading4-font;
+  color: $text_secondary;
+  margin: 0 0 0 0;
+}
+
+//button styling
+button {
+  width:8em;
+  height:4em;
+  border-radius:1em;
+  border-color:transparent;
+  padding:0;
+  background-color: $accent;
+  transition: scale 0.5s, translate 0.5s, background-color 0.5s, color 0.5s;
+  a {
+    font: $paragraph-bold-italic;
+    color: $background_secondary;
+  }
+  a:hover {
+    color: darken($background_secondary, 3%);
+  }
+  a:active {
+    color: darken($background_secondary, 8%);
+  }
+
+  p {
+    margin-top:0;
+    font: $paragraph-bold;
+    font-size:2em;
+    color: $background_secondary;
+  }
+}
+button:hover {
+  scale: 110%;
+  translate: 5%;
+  background-color: darken($accent, 3%);
+}
+button:active {
+  scale: 120%;
+  translate:10%;
+  background-color: darken($accent, 8%);
+}
+
+//change the color of the background when the user highlights/selects something.
+::selection {
+  background-color: darken($accent, 50%);
+}

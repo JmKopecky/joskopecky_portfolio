@@ -1,3 +1,3 @@
-This theme is designed as a starting point for developing other themes utilizing SCSS.
+This is a website that intends to represent my other projects as well as any skills I may have developed in graphic design and front end web development.
 
 Made by Joseph Kopecky :)

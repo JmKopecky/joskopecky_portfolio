@@ -34,7 +34,7 @@ const ParticleImageDisplayer = function(tag_id, canvas_el, params) {
     },
     image: {
       src: {
-        path: "wp-content/themes/revelio/library/images/portfolio-logo-inkscape.png",
+        path: "library/images/portfolio-logo-inkscape.png",
         is_external: false
       },
       size: {

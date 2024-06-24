@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+body {
+  background-color: #12020E;
+  margin: 0 0 0 0;
+  min-height: 100vh;
+}
+
+p {
+  font: 1em "Source Code Pro", monospace;
+  color: #acbdbc;
+  margin: 0 0 0 0;
+}
+
+a {
+  font: italic 1em "Source Code Pro", monospace;
+  color: #28888F;
+  margin: 0 0 0 0;
+}
+
+a:hover {
+  color: #1f6a6f;
+}
+
+a:active {
+  color: #31a6af;
+}
+
+h1 {
+  font: bold 3.5em "Audiowide", monospace;
+  color: #2EAE0A;
+  margin: 0 0 0 0;
+}
+
+h2 {
+  font: bold 3em "Audiowide", monospace;
+  color: #31a6af;
+  margin: 0 0 0 0;
+}
+
+h3 {
+  font: 2.5em "Audiowide", monospace;
+  color: #2b939b;
+  margin: 0 0 0 0;
+}
+
+h4 {
+  font: 2em "Audiowide", monospace;
+  color: #28888F;
+  margin: 0 0 0 0;
+}
+
+button {
+  width: 8em;
+  height: 4em;
+  border-radius: 1em;
+  border-color: transparent;
+  padding: 0;
+  background-color: #2EAE0A;
+  transition: scale 0.5s, translate 0.5s, background-color 0.5s, color 0.5s;
+}
+button a {
+  font: bold italic 1em "Source Code Pro", monospace;
+  color: #220220;
+}
+button a:hover {
+  color: #140112;
+}
+button a:active {
+  color: black;
+}
+button p {
+  margin-top: 0;
+  font: bold 1em "Source Code Pro", monospace;
+  font-size: 2em;
+  color: #220220;
+}
+
+button:hover {
+  scale: 110%;
+  translate: 5%;
+  background-color: #2aa009;
+}
+
+button:active {
+  scale: 120%;
+  translate: 10%;
+  background-color: #248708;
+}
+
+::selection {
+  background-color: black;
+}
+
+#header {
+  background: none;
+  width: 100%;
+  height: 5vh;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+#header #header-name-container {
+  width: fit-content;
+  margin: auto;
+  visibility: hidden;
+  translate: 0 -100%;
+  transition: translate 1s;
+}
+#header #header-name-container p.header-name {
+  font-size: 2vh;
+  margin-top: 1.5vh;
+}
+
+#footer {
+  background-color: #12020E;
+  width: 100%;
+  height: 10vh;
+  position: relative;
+}
+#footer .footer-centerer {
+  width: 100%;
+  position: absolute;
+  top: 3.5vh;
+}
+#footer .footer-centerer p.footer-text {
+  font-size: 3vh;
+  width: 100%;
+  text-align: center;
+}
+
+.animate-left {
+  visibility: hidden;
+  transition: translate 1s;
+  translate: -100%;
+}
+
+.animate-right {
+  visibility: hidden;
+  transition: transform 1s;
+  transform: scaleX(0%);
+  transform-origin: right;
+}
+
+#front-page-container #hero-section-container {
+  width: 100%;
+  height: 110vh;
+  position: relative;
+}
+#front-page-container #hero-section-container #particle-image {
+  background-color: #12020E;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  z-index: 1;
+}
+#front-page-container #hero-section-container #hero-spacer {
+  height: 40vh;
+  width: 0;
+  position: relative;
+  z-index: 2;
+}
+#front-page-container #hero-section-container #hero-name-pretext {
+  margin-left: 2vw;
+  width: fit-content;
+  z-index: 2;
+  position: relative;
+  transition: translate 0.5s;
+}
+#front-page-container #hero-section-container #hero-header-name {
+  margin-left: 2vw;
+  width: fit-content;
+  z-index: 2;
+  position: relative;
+}
+#front-page-container #hero-section-container #hero-tagline {
+  color: #28888F;
+  margin-left: 2vw;
+  width: fit-content;
+  z-index: 2;
+  position: relative;
+  transition: translate 2s;
+}
+#front-page-container #hero-section-container #hero-transition {
+  position: absolute;
+  z-index: 4;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 20vh;
+}
+#front-page-container #description-section-container {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 5vh;
+  position: relative;
+  background-color: #220220;
+}
+#front-page-container #description-section-container #description-paragraph-container {
+  margin-left: 4vw;
+  margin-top: 2vh;
+  width: 40%;
+  float: left;
+}
+#front-page-container #description-section-container #description-paragraph-container #description-title {
+  margin-top: 15vh;
+}
+#front-page-container #description-section-container #desc-photo-container {
+  margin-right: 4vw;
+  aspect-ratio: 12/16;
+  max-width: 40%;
+  height: 90vh;
+  float: right;
+  background: red;
+  position: relative;
+}
+#front-page-container #description-section-container #desc-photo-container #desc-photo {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+#front-page-container #description-section-container #desc-photo-container #desc-photo-frame {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+}
+
+/*# sourceMappingURL=front-page.css.map */
