@@ -97,7 +97,15 @@
       float: left;
 
       #description-title {
-        margin-top: 15vh;
+        margin-top: 10vh;
+      }
+
+      li {
+        color: $accent;
+
+        p {
+          color: $text_main;
+        }
       }
     }
 
@@ -233,6 +241,8 @@
       width: 50%;
       height: fit-content;
       text-align: center;
+      margin: 5vh auto 15vh auto;
+      position: relative;
 
       .project-skills-title {
         margin-top: 1em;
@@ -240,11 +250,10 @@
         color: lighten($text_main, 5%);
       }
       .project-desc {
-        text-align: left;
-        padding-left: 0.5em;
         padding-top: 1em;
         padding-bottom: 1em;
         width: 80%;
+        margin: auto;
       }
       .project-skills-list {
         margin: 0;
@@ -253,7 +262,31 @@
       }
       .project-link {
         padding-top: 1em;
+        width: fit-content;
+        margin: auto;
       }
+    }
+
+    .project-tile::after {
+      content:'';
+      position:absolute;
+      display: block;
+      background-color: $text_secondary;
+      width: 2em;
+      height: 3px;
+      bottom: 0;
+      left:0;
+    }
+
+    .project-tile::before {
+      content:'';
+      position:absolute;
+      display: block;
+      background-color: $text_secondary;
+      width: 3px;
+      height: 2em;
+      top: 0;
+      right:0;
     }
   }
 }

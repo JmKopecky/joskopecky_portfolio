@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Joseph Kopecky</title>
     <meta name="theme-color" content="#12020E">
-    <link rel="stylesheet" href="library/scss/constants.css">
+    <link rel="stylesheet" href="library/scss/front-page.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="library/javascript/jquery.waypoints.min.js"></script>
     <script src="library/javascript/animateInElements.js"></script>
@@ -27,19 +27,125 @@
 
 
 
-<div class="default-page-container"> 
-    <h1 class="default-heading"> OOPS! </h1>
-    <h4 class="default-message"> You have reached the default page </h4>
-    <p class="default-caption"> This page is likely not meant to be accessed. Try returning to the home page. </p>
-    <button> <p> Home </p> </button>
+
+<div id="front-page-container">
+
+    <div id="hero-section-container">
+        <script type="text/javascript" src="library/javascript/particles/particle-image.js" defer></script>
+        <div id="particle-image" data-params-src="library/javascript/particles/params.json"></div>
+        <div id="hero-spacer"></div>
+        <h2 id="hero-name-pretext" class="animate-left">Hi, I'm</h2>
+        <h1 id="hero-header-name" class="animate-left">Joseph Kopecky</h1>
+        <h4 id="hero-tagline" class="animate-left">I am an aspiring software developer.</h4>
+        <img id = "hero-transition" src="library/images/hero-transition.svg">
+    </div>
+
+
+    <div id="description-section-container">
+        <div id="description-paragraph-container">
+            <h3 id="description-title" class="animate-left">Who Am I?</h3>
+            <p class="animate-left"><br/>In short, I am a senior in high school preparing for a bachelor's degree in computer science. To do this, I am utilizing the opportunity of dual enrollment offered by my school to get most of the early college courses complete. Meanwhile, I participate in the University Interscholastic League and compete in multiple areas, including computer science, accounting, and various math competitons—last year I even placed second in the state for Computer Applications!</p>
+            <p class="animate-left"><br/>Additionally and perhaps more standard for students in the same field, I have spent my high school career programming various projects in hopes of further developing my skills, but more on that later. When I'm not doing that, I like to write and read fiction novels—but don't ask for my pen name!</p>
+            <p class="animate-left"><br/>My specialties:</p>
+            <ul class="animate-left">
+                <li><p>Java Programming</p></li>
+                <li><p>Front End Web Development</p></li>
+                <li><p>Full Stack Android Development</p></li>
+            </ul>
+        </div>
+        <div id="desc-photo-container" class="animate-right">
+            <img src="library/images/selfimage.webp" id="desc-photo" alt="self portrait">
+            <img src="library/images/selfimageframe.svg" id="desc-photo-frame" alt="self portrait frame">
+        </div>
+    </div>
+
+
+    <div id="notable-accomplishments-section">
+        <h3 class="animate-left">Awards and Accomplishments</h3>
+        <ul>
+            <li><p>UIL Computer Applications 2nd @ State</p></li>
+            <li><p>NMSI STEM Award and Scholarship</p></li>
+            <li><p>UIL Computer Applications 1st @ Region</p></li>
+            <li><p>UIL Mathematics 1st Team @ Region</p></li>
+            <li><p>UIL Computer Science 5th @ Region</p></li>
+            <li><p>UIL Computer Science 1st @ District</p></li>
+            <li><p>UIL Accounting 1st @ District</p></li>
+            <li><p>UIL Accounting 1st Team @ District</p></li>
+            <li><p>UIL Mathematics 1st Team @ District</p></li>
+            <li><p>UIL Mathematics 5th @ District</p></li>
+        </ul>
+    </div>
+
+
+    <div id="project-transition"><img src="library/images/project-transition.svg"></div>
+
+
+    <div id="project-section">
+        <h2 class="animate-right">Projects</h2>
+
+        <div class="project-tile animate-left">
+            <h4 class="project-title">MathMinds Test Generation Software</h4>
+            <p class="project-desc">Java desktop program that utilizes a JSON file of template questions to generate an output test pdf. Fields and selected questions are randomized to ensure a unique test every time. Additionally, the output test can include automatically generated multiple choice problems using a class of user-defined solver methods that take in the fields of a question and return an output.</p>
+            <p class="project-skills-title">Notable Learned Skills</p>
+            <ul class="project-skills-list">
+                <li><p>Java Swing Desktop Apps</p></li>
+                <li><p>JSON Parsing</p></li>
+                <li><p>Java PDF From HTML String</p></li>
+            </ul>
+            <a href="https://github.com/AayushKoora/MMQuestionGenerator" class="project-link">GitHub</a>
+        </div>
+
+        <div class="project-tile animate-right">
+            <h4 class="project-title">Palaestra Tournament Software</h4>
+            <p class="project-desc">Java web server that makes the job of conducting a tournament far easier by using a web interface over LAN. Compatible with a variety of bracket types, and allows substantial customization of scoring and conducting matches. Tournament managers can upload tests for each match, and each match is again conducted over LAN though a simple web interface.</p>
+            <p class="project-skills-title">Notable Learned Skills</p>
+            <ul class="project-skills-list">
+                <li><p>Java Spring Boot</p></li>
+                <li><p>HTML/CSS/Javascript</p></li>
+                <li><p>Networking</p></li>
+            </ul>
+            <a href="https://github.com/JmKopecky/PalaestraTournaments" class="project-link">GitHub</a>
+        </div>
+
+        <div class="project-tile animate-left">
+            <h4 class="project-title">Cacao Android Application</h4>
+            <p class="project-desc">An app that seeks to offer an alternative to social media when users do not have the time to do anything more substantial. Integrates user-provided notes with data about their assignments and classes to provide a useful experience for students. The feed experience is augmented with various other sources of content such as vocabulary and facts in topics the user signals an interest in.</p>
+            <p class="project-skills-title">Notable Learned Skills</p>
+            <ul class="project-skills-list">
+                <li><p>Android Development</p></li>
+                <li><p>Java</p></li>
+                <li><p>UI Design</p></li>
+            </ul>
+            <a href="https://github.com/AayushKoora/Cacao" class="project-link">GitHub</a>
+        </div>
+
+        <div class="project-tile animate-right">
+            <h4 class="project-title">Progressable Attributes and Abilities</h4>
+            <p class="project-desc">Minecraft mod that adds a rpg-like system of traits and skills that users can level up and improve through gameplay. From increasing one's combat and utility stats to unlocking advanced movement, storms of arrows, and projectile shields, this mod adds an entirely new dynamic to gameplay.</p>
+            <p class="project-skills-title">Notable Learned Skills</p>
+            <ul class="project-skills-list">
+                <li><p>Java</p></li>
+                <li><p>Minecraft API</p></li>
+                <li><p>UI Design</p></li>
+            </ul>
+            <a href="https://github.com/JmKopecky/ProgressableAttributesAndAbilities" class="project-link">GitHub</a>
+        </div>
+    </div>
 </div>
 
 
 
-
 <div id="footer">
-    <div class="footer-centerer">
-        <p class="footer-text"> Copyright © 2024 Joseph Kopecky </p>
+    <div class="footer-content-container">
+        <p class="footer-contact">joseph.m.kopecky@gmail.com</p>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/joseph-kopecky-103ba1313/">LinkedIn</a>
+            <a href="https://github.com/JmKopecky/joskopecky_portfolio">Website Source</a>
+            <a href="https://github.com/jmkopecky">GitHub</a>
+        </div>
+    </div>
+    <div class="footer-copyright-container">
+        <p class="footer-copyright">Copyright © 2024 Joseph Kopecky</p>
     </div>
 </div>
 

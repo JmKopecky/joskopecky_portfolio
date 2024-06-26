@@ -57,13 +57,16 @@ a {
   color: $text_secondary;
   margin: 0 0 0 0;
   text-decoration: none;
+  display: block;
+  position: relative;
 }
 a::after {
   content:'';
   position:absolute;
+  display: block;
   background-color: $text_secondary;
   width:0%;
-  height: 3px;
+  height: 2px;
   bottom:0;
   left:0;
 

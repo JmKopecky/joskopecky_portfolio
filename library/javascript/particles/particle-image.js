@@ -92,6 +92,7 @@ const ParticleImageDisplayer = function(tag_id, canvas_el, params) {
     pImg.canvas.el.width = pImg.canvas.w;
     pImg.canvas.el.height = pImg.canvas.h;
     pImg.canvas.aspect_ratio = pImg.canvas.w / pImg.canvas.h;
+    pImg.canvas.el.willReadFrequently = true;
     window.addEventListener('resize', pImg.functions.utils.debounce(pImg.functions.canvas.onResize, 200));
   };
 

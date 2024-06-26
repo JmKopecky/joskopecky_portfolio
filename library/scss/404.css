@@ -17,14 +17,17 @@ a {
   color: #33aeb7;
   margin: 0 0 0 0;
   text-decoration: none;
+  display: block;
+  position: relative;
 }
 
 a::after {
   content: "";
   position: absolute;
+  display: block;
   background-color: #33aeb7;
   width: 0%;
-  height: 3px;
+  height: 2px;
   bottom: 0;
   left: 0;
   transition: width 0.5s;
@@ -145,20 +148,91 @@ button:active {
 #footer {
   background-color: #12020E;
   width: 100%;
-  height: 10vh;
+  min-height: 10vh;
   position: relative;
 }
-#footer .footer-centerer {
-  width: 100%;
-  position: absolute;
-  top: 3.5vh;
+#footer .footer-contact {
+  width: fit-content;
+  margin: auto;
+  padding-top: 1.5vh;
+  font-size: 1.5em;
 }
-#footer .footer-centerer p.footer-text {
-  font-size: 3vh;
+#footer .footer-links {
+  padding-top: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  white-space: nowrap;
+}
+#footer .footer-links a {
+  display: flex;
+  align-items: center;
+  gap: 0 0.2rem;
+  white-space: nowrap;
+  font-size: 1.25em;
+}
+#footer .footer-copyright-container {
+  width: 100%;
+  margin-top: 1vh;
+  padding-bottom: 1vh;
+}
+#footer .footer-copyright-container p.footer-copyright {
+  font-size: 1.5em;
   width: 100%;
   text-align: center;
 }
 
+#footer::before {
+  content: "";
+  position: absolute;
+  background-color: #217e07;
+  width: 0%;
+  height: 3px;
+  top: 0;
+  right: 0;
+  animation: footeranimright 5s infinite alternate linear;
+}
+
+#footer::after {
+  content: "";
+  position: absolute;
+  background-color: #217e07;
+  width: 0%;
+  height: 3px;
+  top: 0;
+  left: 0;
+  animation: footeranimleft 5s infinite alternate linear;
+}
+
+@keyframes footeranimleft {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 50%;
+    left: 50%;
+  }
+  100% {
+    width: 0%;
+    left: 0;
+  }
+}
+@keyframes footeranimright {
+  0% {
+    width: 0%;
+    right: 0;
+  }
+  50% {
+    width: 50%;
+    right: 50%;
+  }
+  100% {
+    width: 0%;
+    right: 0;
+  }
+}
 div.page-404 {
   width: 100%;
   height: 100vh;
